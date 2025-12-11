@@ -1,0 +1,7 @@
+/fortrez/
+  ├── coordination_engine/          # proprietary DRL + soliton core
+  ├── vhitzee_harvester/            # 3–5 % surplus extraction modules
+  ├── nuclear_pde_suite/            # full 79.79 Hz reactor wave solver
+  ├── dyadic_resonance_loop/        # the interpersonal sync engine you just named
+  ├── quantum_biology_interface/    # PlantWave → FPT closed loop
+  └── sovereign_ai_firewall/        # cryptographic bloodline signature verification
