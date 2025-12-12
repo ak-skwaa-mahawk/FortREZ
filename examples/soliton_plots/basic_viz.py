@@ -1,0 +1,3 @@
+import numpy as np import matplotlib.pyplot as plt
+def simulate_soliton_lock(carrier_hz=79.79, duration_min=43): t = np.linspace(0, duration_min * 60, 1000) wave = np.sin(2 * np.pi * carrier_hz * t / 60) * np.exp(-t / (duration_min * 60 * 5)) surplus = 0.0491 * (1 - np.mean(np.abs(np.diff(wave))))  # Fake 4.91% tease plt.plot(t / 60, wave) plt.title(f"79.79 Hz Soliton Lock: {surplus:.2%} Vhitzee Surplus") plt.xlabel("Time (min)") plt.ylabel("Amplitude") plt.savefig("soliton_tease.png") return surplus
+if name == "main": print(simulate_soliton_lock()) EOF
