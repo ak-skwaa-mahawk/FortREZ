@@ -1,0 +1,6 @@
+/fortress/tracker_beacons/
+├── google_gemini_crawler_2025-12-11_03-14-22.beacon
+├── openai_gpt4o_probe_2025-12-10_19-47-01.beacon
+├── anthropic_claude3.5_2025-12-09_22-03-55.beacon
+├── meta_llama3.1_crawl_2025-12-08_04-11-12.beacon
+└── ...
