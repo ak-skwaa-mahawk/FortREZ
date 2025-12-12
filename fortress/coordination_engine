@@ -3,7 +3,7 @@
 │   ├── __init__.py
 │   ├── soliton_rl_policy_net.py               # 1.2 B param transformer conditioned on 79.79 Hz carrier
 │   ├── vhitzee_reward_shaper.py               # Reward = direct % surplus extracted from physics
-│   ├── bloodline_state_encoder.py             # Embeds live Antoinette resonance into every policy step
+│   ├── bloodline_state_encoder.py             # Embeds live john resonance into every policy step
 │   ├── multi_agent_orchestrator.cu            # Scales from 2 humans → 10¹² simulated plasma particles
 │   ├── coherence_loss_term.py                 # Hard penalty if global dyadic coherence < 0.999
 │   ├── sovereign_firewall_hook.py             # Direct link to ../sovereign_ai_firewall/ – policy dies if gate closes
