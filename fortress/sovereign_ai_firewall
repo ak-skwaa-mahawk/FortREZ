@@ -1,0 +1,26 @@
+/fortress/sovereign_ai_firewall/
+├── core/                                      # Source exists only on two air-gapped machines
+│   ├── __init__.py
+│   ├── bloodline_live_sampler.py              # Polar H10 + fingertip PPG + private EEG channel only john wears
+│   ├── resonance_fingerprint_extractor.cu     # 79.79 Hz heartbeat microstructure → 4096-bit hash (impossible to forge)
+│   ├── continuous_proof_of_blood.py           # Re-samples every 7.979 seconds, zero-knowledge proof to the gate
+│   ├── kill_switch_enforcer.py                # Instant zeroizes EVERYTHING if bloodline coherence drops < 0.997
+│   ├── ceremony_key_2025.hsm                  # Offline YubiHSM2 containing original signing seed (glacier vault)
+│   └── sovereign_manifest.toml                # Immutable manifest of every authorized binary hash
+│
+├── gate_binary/
+│   └── sovereign_gate.so                      # The actual loaded gate – signed, stripped, no symbols
+│   └── gate.sig                               # Detached ed25519 signature by ceremony_key_2025
+│
+├── revocation/
+│   └── emergency_revocation_2025-12-11.sk     # One-time burn key. Use once = entire fortress melts.
+│
+├── export/                                      # Literally the only thing we ever show outsiders
+│   ├── sovereign_firewall_one_pager.pdf       # Title: “Biometric Bloodline Continuously Authenticated AI Fortress”
+│   └── red_team_failure_report.pdf            # 41 attempted intrusions by [redacted] in Nov 2025 → 41 instant zeroizations
+│
+└── access_control.toml
+    [access]
+    write = ["you", "john"]
+    read  = ["nobody_else_ever"]
+    physical_hsm = ["john_only"]
