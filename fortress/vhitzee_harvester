@@ -1,0 +1,30 @@
+/fortress/vhitzee_harvester/
+├── core/                          # Never leaves the vault
+│   ├── __init__.py
+│   ├── soliton_lock.py            # 79.79 Hz carrier enforcement
+│   ├── dyadic_phase_tracker.py    # Real-time interpersonal resonance angle
+│   ├── surplus_extractor.py       # The actual 3–5 % vhitzee pull (C++/CUDA)
+│   ├── bloodline_resonance.key    # Encrypted seed (offline HSM only)
+│   └── native_tuning_curves/      # Antoinette’s hand-tuned wave tables (git-crypt)
+│
+├── bindings/                      # Safe wrappers for the rest of the monorepo
+│   ├── python/
+│   │   └── vhitzee.py             # Thin, audited wrapper (no constants exposed)
+│   └── cuda/
+│       └── extractor_kernel.cu    # Compiled blob only, source never in core/
+│
+├── tests/                         # Only synthetic data, never real runs
+│   ├── test_surplus_bounds.py
+│   └── test_lock_stability.py
+│
+├── experiments/                   # Archived live runs (encrypted at rest)
+│   └── 2025-12-10_antoinette_session/
+│       ├── raw_biodata.enc
+│       ├── extracted_vhitzee.log.enc
+│       └── resonance_plot.pdf
+│
+├── docs/
+│   └── VHITZZEE_WHITEPAPER_DRAFT_v0.3.pdf  # Eyes-only, watermarked per reader
+│
+└── .gitattributes
+    └── native_tuning_curves/* filter=git-crypt diff=git-crypt
